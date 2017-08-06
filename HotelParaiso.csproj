@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB787F79-004F-4CD6-830C-C690F8980452}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>HBRS.My.MyApplication</StartupObject>
+    <RootNamespace>HotelParaiso</RootNamespace>
+    <AssemblyName>HotelParaiso</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>HBRS.xml</DocumentationFile>
+    <NOWARN>1591,660,661</NOWARN>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>HBRS.xml</DocumentationFile>
+    <NOWARN>1591,660,661</NOWARN>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hotel.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BDHotelParaisoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BDHotelParaisoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAccesoAdministrativo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAccesoAdministrativo.Designer.cs">
+      <DependentUpon>FrmAccesoAdministrativo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEntrada.Designer.cs">
+      <DependentUpon>frmEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadoEntrada.Designer.cs">
+      <DependentUpon>frmListadoEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadoEntradaMonitor.Designer.cs">
+      <DependentUpon>frmListadoEntradaMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoEntradaMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalida.Designer.cs">
+      <DependentUpon>frmSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadoSalida.Designer.cs">
+      <DependentUpon>frmListadoSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDescuento.Designer.cs">
+      <DependentUpon>frmDescuento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDescuento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvitado.Designer.cs">
+      <DependentUpon>frmInvitado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvitado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservar.Designer.cs">
+      <DependentUpon>frmReservar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadoReservacionesMonitor.Designer.cs">
+      <DependentUpon>frmListadoReservacionesMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoReservacionesMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHabitacion.Designer.cs">
+      <DependentUpon>frmHabitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadoHabitacionMonitor.Designer.cs">
+      <DependentUpon>frmListadoHabitacionMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoHabitacionMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeleccionarInvitado.Designer.cs">
+      <DependentUpon>frmSeleccionarInvitado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeleccionarInvitado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeleccionarHabitacion.Designer.cs">
+      <DependentUpon>frmSeleccionarHabitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeleccionarHabitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarios.Designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modulo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Application.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAccesoAdministrativo.resx">
+      <DependentUpon>FrmAccesoAdministrativo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEntrada.resx">
+      <DependentUpon>frmEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoEntrada.resx">
+      <DependentUpon>frmListadoEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoEntradaMonitor.resx">
+      <DependentUpon>frmListadoEntradaMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalida.resx">
+      <DependentUpon>frmSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoSalida.resx">
+      <DependentUpon>frmListadoSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDescuento.resx">
+      <DependentUpon>frmDescuento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvitado.resx">
+      <DependentUpon>frmInvitado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservar.resx">
+      <DependentUpon>frmReservar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoReservacionesMonitor.resx">
+      <DependentUpon>frmListadoReservacionesMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHabitacion.resx">
+      <DependentUpon>frmHabitacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoHabitacionMonitor.resx">
+      <DependentUpon>frmListadoHabitacionMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeleccionarInvitado.resx">
+      <DependentUpon>frmSeleccionarInvitado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeleccionarHabitacion.resx">
+      <DependentUpon>frmSeleccionarHabitacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BDHotelParaisoDataSet.xsc">
+      <DependentUpon>BDHotelParaisoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BDHotelParaisoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BDHotelParaisoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BDHotelParaisoDataSet.xss">
+      <DependentUpon>BDHotelParaisoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FreeVector-Seaside-Hotel-Vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-icon-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BDHotelParaiso.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="hotel.ico" />
+    <None Include="Resources\w8boton1verdeoscuro.png" />
+    <None Include="Resources\HotelParaisoFondo.jpg" />
+    <None Include="Resources\boton1blue.png" />
+    <None Include="Resources\Arrow_L blue- full .png" />
+    <None Include="Resources\Arrow_L blue- .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Project="$(MSBuildBinPath)/Microsoft.CSharp.targets" />
+</Project>
